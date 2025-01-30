@@ -1,20 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* กำหนดพื้นหลังที่เป็น Gradient ให้สวยงาม */
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient สวยๆ */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,12 +8,51 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow สำหรับข้อความ */
+  transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงต่างๆ นุ่มนวล */
 }
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.5s ease; /* ให้ logo หมุนอย่างนุ่มนวล */
+}
+
+/* แก้ไข animation ให้หมุนเร็วขึ้น */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 12s linear;
+  }
+}
+
+/* เพิ่ม shadow ให้กับ logo */
+.App-logo:hover {
+  transform: scale(1.1) rotate(360deg); /* ทำให้ logo ขยายและหมุนเมื่อ hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* เพิ่ม effect เวลามี hover */
+}
+
+/* ใช้ font-family ที่ดูทันสมัย */
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* สีพื้นหลังที่อ่อนสบายตา */
+}
+
+/* ลิงก์มีการเปลี่ยนแปลงเมื่อ hover */
 .App-link {
   color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease; /* เพิ่ม transition ในการเปลี่ยนสี */
 }
 
+.App-link:hover {
+  color: #ff007f; /* สีเมื่อ hover */
+  text-decoration: underline;
+}
+
+/* เพิ่ม animation เมื่อโหลดหน้า */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
