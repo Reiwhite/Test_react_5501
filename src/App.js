@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
+        <img src="https://img1.picmix.com/output/stamp/thumb/6/9/7/8/2588796_cb6f0.gif" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Kuru Kuru 
         </p>
         <a
           className="App-link"
@@ -15,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Kururing
         </a>
       </header>
     </div>
@@ -23,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+// className="App-logo"
